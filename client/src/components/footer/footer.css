@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--theme-color-primary);
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    transition: transform 0.1s ease-in-out;
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+}
