@@ -20,7 +20,7 @@ const User = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get(`https://hitakshi-pay-api.vercel.app//api/getall`);
+            const response = await axios.get(`https://hitakshi-pay-api.vercel.app/api/getall`);
             setUsers(response.data);
             setFilteredUsers(response.data);
         }
@@ -41,7 +41,7 @@ const User = () => {
     }, [filter, searchQuery, users]);
 
     const deleteUser = async (userId) => {
-        await axios.delete(`https://hitakshi-pay-api.vercel.app//api/delete/${userId}`)
+        await axios.delete(`https://hitakshi-pay-api.vercel.app/api/delete/${userId}`)
             .then((response) => {
                 setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
                 toast.success(response.data.msg, { position: 'top-right' });
@@ -71,7 +71,7 @@ const User = () => {
     }
 
     const handleSave = async (userId) => {
-        await axios.put(`https://hitakshi-pay-api.vercel.app//api/update/${userId}`, editedValues)
+        await axios.put(`https://hitakshi-pay-api.vercel.app/api/update/${userId}`, editedValues)
             .then((response) => {
                 setUsers((prevUser) => prevUser.map((user) =>
                     user._id === userId ? { ...user, ...editedValues } : user
