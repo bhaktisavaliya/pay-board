@@ -42,7 +42,7 @@ const Add = () => {
 
   return (
     <div className='addUser'>
-        <Link to={"/"}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 5l-5 5l5 5"/><path d="M3 10h8c5.523 0 10 4.477 10 10v1"/></g></svg>Back</Link>
+        <Link to={"/users"}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 5l-5 5l5 5"/><path d="M3 10h8c5.523 0 10 4.477 10 10v1"/></g></svg>Back</Link>
         <h3>Add New User</h3>
         <form className='addUserForm' onSubmit={submitForm}>
             <div className="inputGroup">
