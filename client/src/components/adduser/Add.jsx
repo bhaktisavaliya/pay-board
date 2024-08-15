@@ -34,7 +34,7 @@ const Add = () => {
     try {
       const response = await axios.post(`https://hitakshi-pay-api.vercel.app/api/create`, user);
       toast.success(response.data.msg, { position: "top-right" });
-      navigate("/");
+      navigate("/users");
     } catch (error) {
       console.log(error);
     }
