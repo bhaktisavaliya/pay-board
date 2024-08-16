@@ -1,18 +1,16 @@
 .userTable {
     width: 60%;
     background-color: white;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
-    margin: 50px auto;
+    margin: auto;
     padding: 50px;
 }
 @media (max-width: 991px) {
     .userTable {
         padding: 0 15px;
-        width: 100%;
+        width: auto;
     }
 }
-
 .addButton {
     text-decoration: none;
     background-color: #6da003;
@@ -22,25 +20,21 @@
     border-radius: 5px;
     padding: 10px;
 }
-
 .userTable table {
     width: 100%;
     margin-top: 30px;
     border-collapse: collapse;
 }
-
 .userTable table thead th {
     background-color: #6da003;
     color: white;
     padding: 10px;
 }
-
 .userTable table tbody td {
     padding: 10px;
     text-transform: capitalize;
     text-align: center;
 }
-
 .actionButtons button {
     border: 0;
     outline: none;
@@ -50,12 +44,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .actionButtons .save {
     background-color: #006B96;
     margin: 0 10px;
 }
-
 .actionButtons .edit {
     background: green;
     padding: 6px 10px;
@@ -64,25 +56,16 @@
     margin: 0 10px;
     text-decoration: none;
 }
-
 .btn-wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-
-.btn-wrapper {
-    @media (max-width: 991px) {
-        display: block;
-    }
-}
-
 .btn-wrapper .filter-data label {
     font-weight: 500;
     margin-right: 15px;
 }
-
 .btn-wrapper .sort-btn {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -91,13 +74,10 @@
     margin-right: 10px;
     padding: 10px 10px;
 }
-
 .search-header-display-full {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
-
 .search-header-display-full form {
     background-color: #fff;
     border: 1px solid #eee;
@@ -105,17 +85,14 @@
     display: flex;
     width: max-content;
 }
-
 .search-words {
     padding: 10px;
     border-radius: 4px;
-    width: 250px;
     font-size: 16px;
     margin-right: 10px;
     outline: none;
     border: none
 }
-
 .header-search-btn {
     padding: 14px 16px;
     background-color: #fff;
@@ -123,9 +100,66 @@
     outline: none;
     cursor: pointer;
 }
-
 .header-search-btn svg {
     width: 20px;
     height: 20px;
     fill: #fff;
+}
+@media (max-width: 991px) {
+    .btn-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .search-header-display-full {
+        margin: 20px 0;
+    }
+    .userTable thead {
+        display: none;
+    }
+    .userTable table tbody,
+    .userTable table tbody tr {
+        display: block;
+    }
+    .userTable table tbody td {
+        border: none;
+        display: block;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    .userTable table tbody td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 700;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+    }
+    .userTable table tbody td:nth-of-type(1):before {
+        content: "No.";
+    }
+    .userTable table tbody td:nth-of-type(2):before {
+        content: "User Name";
+    }
+    .userTable table tbody td:nth-of-type(3):before {
+        content: "Total Payment: ";
+    }
+    .userTable table tbody td:nth-of-type(4):before {
+        content: "Status";
+    }
+    .userTable table tbody td:nth-of-type(5):before {
+        content: "Payment Mode";
+    }
+    .userTable table tbody td:nth-of-type(6):before {
+        content: "Working Person";
+    }
+    .userTable table tbody td:nth-of-type(7):before {
+        content: "Payment Status";
+    }
+    .userTable table tbody td:nth-of-type(8):before {
+        content: "Actions";
+    }
 }

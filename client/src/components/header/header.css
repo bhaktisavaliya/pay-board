@@ -1,10 +1,12 @@
 .header {
-    background-color: var(--theme-color-primary);
+    background-color: #fff;
     width: 100%;
     z-index: 99;
     position: relative;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
+    margin-bottom: 20px;
     transition: transform 0.1s ease-in-out;
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
 }

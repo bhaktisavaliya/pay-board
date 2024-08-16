@@ -1,12 +1,11 @@
 import React from 'react';
-import Logo from "../../assets/images/user-1.jpg";
-import "./footer.scss";
+import Logo from "../../assets/images/logo.png";
+import "./footer.css";
 
 // Footer Component
 const Footer = () => {
   return (
     <footer className="footer-main">
-      <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="footer-image">
@@ -22,7 +21,6 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
       </div>
     </footer>
   );
