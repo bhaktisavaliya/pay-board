@@ -6,6 +6,13 @@
     margin: 50px auto;
     padding: 50px;
 }
+@media (max-width: 991px) {
+    .userTable {
+        padding: 0 15px;
+        width: 100%;
+    }
+}
+
 .addButton {
     text-decoration: none;
     background-color: #6da003;
@@ -15,21 +22,25 @@
     border-radius: 5px;
     padding: 10px;
 }
+
 .userTable table {
     width: 100%;
     margin-top: 30px;
     border-collapse: collapse;
 }
+
 .userTable table thead th {
     background-color: #6da003;
     color: white;
     padding: 10px;
 }
+
 .userTable table tbody td {
     padding: 10px;
     text-transform: capitalize;
     text-align: center;
 }
+
 .actionButtons button {
     border: 0;
     outline: none;
@@ -39,10 +50,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
 .actionButtons .save {
     background-color: #006B96;
     margin: 0 10px;
 }
+
 .actionButtons .edit {
     background: green;
     padding: 6px 10px;
@@ -51,16 +64,25 @@
     margin: 0 10px;
     text-decoration: none;
 }
+
 .btn-wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
+
+.btn-wrapper {
+    @media (max-width: 991px) {
+        display: block;
+    }
+}
+
 .btn-wrapper .filter-data label {
     font-weight: 500;
     margin-right: 15px;
 }
+
 .btn-wrapper .sort-btn {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -69,18 +91,21 @@
     margin-right: 10px;
     padding: 10px 10px;
 }
+
 .search-header-display-full {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .search-header-display-full form {
     background-color: #fff;
     border: 1px solid #eee;
     border-radius: 4px;
     display: flex;
-    overflow: hidden;
+    width: max-content;
 }
+
 .search-words {
     padding: 10px;
     border-radius: 4px;
@@ -90,6 +115,7 @@
     outline: none;
     border: none
 }
+
 .header-search-btn {
     padding: 14px 16px;
     background-color: #fff;
@@ -97,6 +123,7 @@
     outline: none;
     cursor: pointer;
 }
+
 .header-search-btn svg {
     width: 20px;
     height: 20px;
