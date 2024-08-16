@@ -5,15 +5,16 @@
     overflow: hidden;
     padding: 50px 0;
     background: #fff;
-}
-@media only screen and (max-width: 575px) {
-    .footer-main {
-        padding: 30px;
-    }
+    margin-top: 20px;
 }
 @media (max-width: 991px) {
     .footer-main {
         padding: 50px 0;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .footer-main {
+        padding: 30px;
     }
 }
 .footer-main .footer-link {
